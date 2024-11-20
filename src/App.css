@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #000428, #004e92);
+  color: #fff;
+  margin: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  text-align: center;
+  max-width: 400px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.neon-text {
+  font-size: 2.5rem;
+  color: #0ff;
+  text-shadow: 0 0 5px #0ff, 0 0 20px #0ff, 0 0 40px #00f;
+}
+
+.display {
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 20px;
+  margin: 20px auto;
+  width: 300px;
+  border-radius: 15px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  color: #0ff;
+  box-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+}
+
+.neon-button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #ff0080, #ff8c00);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff0080;
+  transition: all 0.3s;
+}
+
+.neon-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ff8c00, 0 0 30px #ff0080;
+}
+
+.laps ul {
+  list-style: none;
+  padding: 0;
+}
+
+.laps li {
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
 }
